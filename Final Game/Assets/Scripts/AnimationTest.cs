@@ -19,10 +19,11 @@ public class AnimationTest : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (Input.GetKey(KeyCode.A))
         {
-            animator.SetInteger("AnimState", 0);
             facingRight = false;
+            animator.SetInteger("AnimState", 0);
+
         }
-        if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D))
         {
             animator.SetInteger("AnimState", 0);
             facingRight = true;
@@ -30,7 +31,6 @@ public class AnimationTest : MonoBehaviour
         else
         {
             animator.SetInteger("AnimState", 1);
-            facingRight = true;
         }
     }
     private void FixedUpdate()
