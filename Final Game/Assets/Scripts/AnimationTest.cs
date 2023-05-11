@@ -40,11 +40,11 @@ public class AnimationTest : MonoBehaviour
         }
         if (Walk == true)
         {
-            audiosource.mute = false;
+            audiosource.mute = true;
         }
         else if (Walk == false)
         {
-            audiosource.mute = true;
+            audiosource.mute = false;
         }
     }
     private void FixedUpdate()

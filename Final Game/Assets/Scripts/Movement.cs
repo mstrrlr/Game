@@ -105,6 +105,7 @@ public class Movement : MonoBehaviour
     // Called at fixed intervals regardless of frame rate, unlike the Update method.
     void FixedUpdate()
     {
+
         // Get information from Player's collider
         Bounds colliderBounds = mainCollider.bounds;
         float colliderRadius = mainCollider.size.x * 0.4f * Mathf.Abs(transform.localScale.x);
