@@ -46,9 +46,7 @@ public class AnimationTest : MonoBehaviour
         {
             audiosource.mute = false;
         }
-    }
-    private void FixedUpdate()
-    {
+
         spriteRenderer.flipX = !facingRight;
     }
 }

@@ -23,6 +23,7 @@ public class Pause : MonoBehaviour
     public void Home()
     {
         SceneManager.LoadScene("Home");
+        print("Click");
     }
     private void Update()
     {
