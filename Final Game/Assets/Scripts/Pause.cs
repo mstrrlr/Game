@@ -19,6 +19,7 @@ public class Pause : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+        print("Quit");
     }
     public void Home()
     {
